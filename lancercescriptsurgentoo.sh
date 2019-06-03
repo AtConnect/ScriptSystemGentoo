@@ -71,7 +71,7 @@ function CheckVersion(){
 	if [[ "$VERSION" < 4.* ]]; then
 		exit 1
 	fi
-
+}
 
 function CheckPastInstall(){
 	FILE="/usr/local/nagios/etc/command_nrpe.cfg"
