@@ -113,7 +113,7 @@ function UpdateSystem(){
 	emerge --sync
 	echo "Install of apps" >> logs		
 	emerge sys-devel/gcc sys-libs/glibc net-misc/wget dev-libs/openssl dev-lang/perl dev-libs/openssl sys-process/htop sys-process/iotop
-	
+}	
 
 
 function DownloadNRPE(){
