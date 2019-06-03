@@ -7,9 +7,9 @@ set -e -o pipefail
 function check_ip()
 {    
     if [[ $1 =~ ^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$ ]]; then    
-    result=true
+    result="true"
     else
-    result=false
+    result="false"
     fi
 }
 
@@ -218,5 +218,4 @@ main() {
         
     fi
 }
-
 main "${@}"
