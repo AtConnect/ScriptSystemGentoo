@@ -112,7 +112,7 @@ function UpdateSystem(){
 	echo "Update System" >> logs
 	emerge --sync
 	echo "Install of apps" >> logs		
-	emerge --noreplace sys-devel/gcc sys-libs/glibc net-misc/wget dev-libs/openssl dev-lang/perl dev-libs/openssl sys-process/htop sys-process/iotop
+	emerge sys-devel/gcc sys-libs/glibc net-misc/wget dev-libs/openssl dev-lang/perl dev-libs/openssl sys-process/htop sys-process/iotop
 	
 
 
@@ -161,7 +161,7 @@ function ConfigNRPE(){
 
 function NRPEPlugins(){
 	echo "Install NRPE plugins for NRPE" >> logs
-	emerge --noreplace net-analyzer/nagios-plugins net-analyzer/nagios net-analyzer/net-snmp dev-perl/Net-SNMP sys-devel/gettext	
+	emerge net-analyzer/nagios-plugins net-analyzer/nagios net-analyzer/net-snmp dev-perl/Net-SNMP sys-devel/gettext	
 	cd /tmp ||  exit 1
 	# wget --no-check-certificate -O nagios-plugins.tar.gz https://github.com/nagios-plugins/nagios-plugins/archive/release-2.2.1.tar.gz >> logs
 	# tar zxf nagios-plugins.tar.gz >> logs
